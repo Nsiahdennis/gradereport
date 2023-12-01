@@ -2,8 +2,7 @@ import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 
-// import NavItems from "./NavItems";
-// import Cart from "./Cart";
+
 const Navbar = () => {
 
     const user = null

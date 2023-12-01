@@ -1,29 +1,30 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
+import Navbar from "./Navbar";
 
 const faqData = [
   {
-    question: "What is gradereport?",
-    answer: "gradereport is a comprehensive grade management app, designed to help students efficiently manage and track their academic progress.",
+    question: "What is Hippo Score?",
+    answer: "Hippo Score is a comprehensive grade management app, designed to help students efficiently manage and track their academic progress.",
   },
   {
-    question: "How do I get started with gradereport?",
-    answer: "To get started, follow the step-by-step instructions in our Getting Started Guide to sign up, create an account, and begin using gradereport.",
+    question: "How do I get started with Hippo Score?",
+    answer: "To get started, follow the step-by-step instructions in our Getting Started Guide to sign up, create an account, and begin using Hippo Score.",
   },
   {
-    question: "What platforms does gradereport support?",
-    answer: "gradereport is available on iOS, Android, and web browsers. Please check the system requirements for the best user experience.",
+    question: "What platforms does Hippo Score support?",
+    answer: "Hippo Score is available on iOS, Android, and web browsers. Please check the system requirements for the best user experience.",
   },
   {
-    question: "How can I add a new course to my gradereport account?",
-    answer: "Adding a new course is easy! Simply follow the instructions in our Adding Courses Tutorial to add new courses to your gradereport account.",
+    question: "How can I add a new course to my Hippo Score account?",
+    answer: "Adding a new course is easy! Simply follow the instructions in our Adding Courses Tutorial to add new courses to your Hippo Score account.",
   },
   {
-    question: "I forgot my password. How can I reset it on gradereport?",
+    question: "I forgot my password. How can I reset it on Hippo Score?",
     answer: "If you've forgotten your password, click on the 'Forgot Password' link on the login page. Follow the instructions sent to your email to reset your password securely.",
   },
   {
-    question: "Can I access gradereport offline?",
+    question: "Can I access Hippo Score offline?",
     answer: "gradereport primarily requires an internet connection for real-time updates. However, you can enable offline mode to access some features without an internet connection. Learn more in our Offline Mode Guide.",
   },
 
@@ -34,6 +35,8 @@ const faqData = [
 
 export default function support() {
   return (
+    <>
+    <Navbar/>
    <MaxWidthWrapper>
     <div className="pt-10">
       <h1 className="font-extrabold text-4xl">Frequently Asked Questions (FAQ)</h1>
@@ -64,5 +67,7 @@ export default function support() {
     </div>
 
    </MaxWidthWrapper>
+   </>
+
   )
 }
